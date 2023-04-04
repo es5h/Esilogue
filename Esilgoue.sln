@@ -8,6 +8,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{EF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "src\BuildingBlocks\EventBus\EventBus.csproj", "{13D6AF68-F6A3-43D7-BF08-B10ED19B63F6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2D502441-77C4-47EE-9CE2-023E679E8EF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenAi", "OpenAi", "{B86D5C9B-5ED7-48CD-AB03-A52A42831C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAi.API", "src\OpenAi\OpenAi.API\OpenAi.API.csproj", "{6DEA15BD-5B89-4762-B8FA-C04E9376605D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{5172F529-C4CA-4065-AE5C-D3399F0ED533}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{0A6605DF-A3F7-441C-8600-270DBEBB448E}"
+	ProjectSection(SolutionItems) = preProject
+		dapr\components\esilogue-secretstore.yml = dapr\components\esilogue-secretstore.yml
+		dapr\components\esilogue-secrets.json = dapr\components\esilogue-secrets.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +31,19 @@ Global
 		{D23682BC-61F7-420C-902E-F99A486CE824} = {2AEE4BD6-2848-4ACE-B676-4535F8FBC6DF}
 		{EFED19AF-71FF-4469-AA04-CF5FCCBF21BE} = {D23682BC-61F7-420C-902E-F99A486CE824}
 		{13D6AF68-F6A3-43D7-BF08-B10ED19B63F6} = {EFED19AF-71FF-4469-AA04-CF5FCCBF21BE}
+		{2D502441-77C4-47EE-9CE2-023E679E8EF7} = {2AEE4BD6-2848-4ACE-B676-4535F8FBC6DF}
+		{B86D5C9B-5ED7-48CD-AB03-A52A42831C61} = {2D502441-77C4-47EE-9CE2-023E679E8EF7}
+		{6DEA15BD-5B89-4762-B8FA-C04E9376605D} = {B86D5C9B-5ED7-48CD-AB03-A52A42831C61}
+		{0A6605DF-A3F7-441C-8600-270DBEBB448E} = {5172F529-C4CA-4065-AE5C-D3399F0ED533}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{13D6AF68-F6A3-43D7-BF08-B10ED19B63F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13D6AF68-F6A3-43D7-BF08-B10ED19B63F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13D6AF68-F6A3-43D7-BF08-B10ED19B63F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13D6AF68-F6A3-43D7-BF08-B10ED19B63F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEA15BD-5B89-4762-B8FA-C04E9376605D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEA15BD-5B89-4762-B8FA-C04E9376605D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEA15BD-5B89-4762-B8FA-C04E9376605D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEA15BD-5B89-4762-B8FA-C04E9376605D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

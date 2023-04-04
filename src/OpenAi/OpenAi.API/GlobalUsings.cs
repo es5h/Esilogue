@@ -1,0 +1,13 @@
+﻿global using Esilogue.BuildingBlocks.EventBus;
+global using Esilogue.Services.OpenAi.API;
+global using Esilogue.Services.OpenAi.API.IntegrationEvents.EventHandling;
+global using Dapr.Client;
+global using Dapr.Extensions.Configuration;
+global using Microsoft.OpenApi.Models;
+global using OpenAI.GPT3.Extensions;
+global using OpenAI.GPT3.Interfaces;
+global using OpenAI.GPT3.Managers;
+global using Esilogue.Services.OpenAi.API.IntegrationEvents.Events;
+global using Microsoft.Extensions.Options;
+global using OpenAI.GPT3.ObjectModels;
+global using OpenAI.GPT3.ObjectModels.RequestModels;
