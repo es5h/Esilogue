@@ -1,6 +1,3 @@
 ﻿namespace Esilogue.Services.OpenAi.API.IntegrationEvents.Events;
 
-public record SummaryGeneratedEvent
-{
-    
-}
+public record SummaryGeneratedIntegrationEvent(int PostId, string Summary) : IntegrationEvent;
